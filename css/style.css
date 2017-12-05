@@ -1,0 +1,205 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/5.0.0/sanitize.min.css");
+@import url('href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Open+Sans');
+@import url("http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
+body {
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  text-align: center;
+  margin: 0; }
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Montserrat', sans-serif; }
+
+.padding {
+  padding: 100px 5% 100px 5%; }
+
+h1 {
+  font-weight: 900; }
+
+h3 {
+  font-size: 50px;
+  text-transform: uppercase;
+  margin: 0; }
+
+nav {
+  background-color: #2D3F50;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 160px 35px 160px; }
+  nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    color: white;
+    margin-right: 20px; }
+    nav a:hover {
+      color: #28BB9C; }
+
+.separador {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .separador .ion-android-star {
+    font-size: 60px;
+    margin: 0 10px; }
+  .separador:before {
+    content: "";
+    width: 120px;
+    height: 5px;
+    background-color: white; }
+  .separador:after {
+    content: "";
+    width: 120px;
+    height: 5px;
+    background-color: white; }
+
+header {
+  background-color: #28BB9C;
+  color: white; }
+  header h2 {
+    font-size: 70px;
+    font-weight: 900; }
+  header p {
+    font-size: 25px; }
+
+.portfolio {
+  color: #2D3F50; }
+  .portfolio .separador:before {
+    background-color: #2D3F50; }
+  .portfolio .separador:after {
+    background-color: #2D3F50; }
+  .portfolio .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .portfolio .gallery .box {
+      margin: 10px;
+      position: relative; }
+      .portfolio .gallery .box img {
+        z-index: 10;
+        max-width: 350px;
+        max-height: 250px; }
+      .portfolio .gallery .box .hover {
+        width: 100%;
+        max-width: 350px;
+        height: 250px;
+        opacity: 0;
+        background-color: #28BB9C;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 70px; }
+      .portfolio .gallery .box .hover:hover {
+        opacity: 0.7; }
+
+.about {
+  background-color: #28BB9C;
+  color: white; }
+  .about .boxP {
+    display: flex;
+    justify-content: center; }
+    .about .boxP p {
+      font-size: 18px;
+      max-width: 300px;
+      margin-right: 20px;
+      text-align: left; }
+  .about button {
+    border: solid 2px white;
+    padding: 20px;
+    border-radius: 5%;
+    font-size: 20px;
+    margin-top: 30px;
+    transition: all 0.3s ease; }
+    .about button:hover {
+      background-color: white;
+      color: #2D3F50; }
+    .about button span {
+      margin-right: 15px; }
+
+.contact {
+  color: #2D3F50; }
+  .contact .separador:before {
+    background-color: #2D3F50; }
+  .contact .separador:after {
+    background-color: #2D3F50; }
+  .contact form {
+    margin: 0 auto;
+    width: 700px;
+    text-align: left; }
+    .contact form input,
+    .contact form textarea {
+      color: #868E95;
+      border: none;
+      border-bottom: 1px #868E95 solid;
+      display: inline-block;
+      width: 100%;
+      resize: none;
+      margin-bottom: 15px; }
+    .contact form button {
+      color: white;
+      background-color: #28BB9C;
+      padding: 15px 20px;
+      border-radius: 5px;
+      border-bottom: none;
+      border-right: none;
+      transition: all 0.3s ease; }
+      .contact form button:hover {
+        background-color: #1b7c67; }
+
+.prefooter {
+  padding: 50px 160px;
+  background-color: #2D3F50;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
+  align-items: center; }
+  .prefooter div {
+    width: 33%; }
+  .prefooter h4 {
+    font-weight: 900;
+    font-size: 20px; }
+  .prefooter ul {
+    display: flex;
+    align-items: center; }
+    .prefooter ul li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      list-style-type: none;
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      font-size: 20px;
+      color: white;
+      transition: all 0.3s ease;
+      border: solid 2px white; }
+      .prefooter ul li:hover {
+        background-color: white;
+        opacity: 1;
+        color: #2D3F50; }
+  .prefooter a {
+    color: #28BB9C;
+    text-decoration: none; }
+    .prefooter a:hover {
+      color: #1f9179;
+      text-decoration: underline; }
+
+footer {
+  background-color: #1b262f;
+  color: white;
+  margin: 0;
+  font-size: 13px;
+  padding: 25px 0; }
+
+/*# sourceMappingURL=style.css.map */

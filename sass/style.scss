@@ -1,0 +1,252 @@
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/5.0.0/sanitize.min.css');
+    @import url('href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Open+Sans');
+    @import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'); //  header white portfolio #28BB9C about white contacto #2D3F50 footer #1A252F footer2
+    body {
+        font-family: 'Open Sans', sans-serif; // padding: 100px 160px 50px 160px;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .padding {
+        padding: 100px 5% 100px 5%;
+    }
+
+    h1 {
+        font-weight: 900;
+    }
+
+    h3 {
+        font-size: 50px;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    nav {
+        background-color: #2D3F50;
+        display: flex;
+        color: white;
+        justify-content: space-between;
+        align-items: center; // width: 100%;
+        padding: 35px 160px 35px 160px;
+        a {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            text-decoration: none;
+            color: white;
+            margin-right: 20px;
+            &:hover {
+                color: #28BB9C;
+            }
+        }
+    }
+
+    .separador {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .ion-android-star {
+            font-size: 60px;
+            margin: 0 10px;
+        }
+        &:before {
+            content: "";
+            width: 120px;
+            height: 5px;
+            background-color: white;
+        }
+        &:after {
+            content: "";
+            width: 120px;
+            height: 5px;
+            background-color: white;
+        }
+    }
+
+    header {
+        background-color: #28BB9C;
+        color: white;
+        h2 {
+            font-size: 70px;
+            font-weight: 900;
+        }
+        p {
+            font-size: 25px;
+        }
+    }
+
+    .portfolio {
+        color: #2D3F50;
+        .separador {
+            &:before {
+                background-color: #2D3F50;
+            }
+            &:after {
+                background-color: #2D3F50;
+            }
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .box {
+                margin: 10px;
+                position: relative;
+                img {
+                    z-index: 10;
+                    max-width: 350px;
+                    max-height: 250px;
+                }
+                .hover {
+                    width: 100%;
+                    max-width: 350px;
+                    height: 250px;
+                    opacity: 0;
+                    background-color: #28BB9C;
+                    position: absolute;
+                    bottom: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    font-size: 70px;
+                }
+                .hover:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+
+    .about {
+        background-color: #28BB9C;
+        color: white;
+        .boxP {
+            display: flex;
+            justify-content: center;
+            p {
+                font-size: 18px;
+                max-width: 300px;
+                margin-right: 20px;
+                text-align: left;
+            }
+        }
+        button {
+            border: solid 2px white;
+            padding: 20px;
+            border-radius: 5%;
+            font-size: 20px;
+            margin-top: 30px;
+            transition: all 0.3s ease;
+            &:hover {
+                background-color: white;
+                color: #2D3F50;
+            }
+            span {
+                margin-right: 15px;
+            }
+        }
+    }
+
+    .contact {
+        color: #2D3F50;
+        .separador {
+            &:before {
+                background-color: #2D3F50;
+            }
+            &:after {
+                background-color: #2D3F50;
+            }
+        }
+        form {
+            margin: 0 auto;
+            width: 700px;
+            text-align: left;
+            input,
+            textarea {
+                color: #868E95;
+                border: none;
+                border-bottom: 1px #868E95 solid;
+                display: inline-block;
+                width: 100%;
+                resize: none;
+                margin-bottom: 15px;
+            }
+            button {
+                color: white;
+                background-color: #28BB9C;
+                padding: 15px 20px;
+                border-radius: 5px;
+                border-bottom: none;
+                border-right: none;
+                transition: all 0.3s ease;
+                &:hover {
+                    background-color: darken(#28BB9C, 15%);
+                }
+            }
+        }
+    }
+
+    .prefooter {
+        padding: 50px 160px;
+        background-color: #2D3F50;
+        color: white;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        font-size: 17px;
+        align-items: center;
+        div {
+            width: 33%;
+        }
+        h4 {
+            font-weight: 900;
+            font-size: 20px;
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 10px;
+                list-style-type: none;
+                border-radius: 50%;
+                height: 40px;
+                width: 40px;
+                font-size: 20px;
+                color: white;
+                transition: all 0.3s ease;
+                border: solid 2px white;
+                &:hover {
+                    background-color: white;
+                    opacity: 1;
+                    color: #2D3F50;
+                }
+            }
+        }
+        a {
+            color: #28BB9C;
+            text-decoration: none;
+            &:hover {
+                color: darken(#28BB9C, 10%);
+                text-decoration: underline;
+            }
+        }
+    }
+
+    footer {
+        background-color: #1b262f;
+        color: white;
+        margin: 0;
+        font-size: 13px;
+        padding: 25px 0;
+    }
